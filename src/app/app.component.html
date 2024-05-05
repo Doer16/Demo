@@ -1,11 +1,2 @@
-<h1 *ngIf ="!data; then load; else sample">loading.....</h1> <!-- If else condition -->
-
-
-
-<ng-template #sample> <!-- In html we can give same names, here "sample" template reference varaible -->
-    {{data}}
-</ng-template>
-
-<ng-template #load> 
-    Loading....
-</ng-template>
+<p *ngFor="let n of nums">paragraph {{n}}
+</p>
