@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  city = "Hyderabad";
 
-  movies = ['RRR', 'Bheemla Nayak', 'Pushpa', 'asrshs'];
+  data = ["hyd", "Banglore", "delhi"];
 }
