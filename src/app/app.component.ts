@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  nums = ['s', 'w', 'm', 's', 'b'];
+  mobiles = ['redmi', 'realme', 'appo', 'vivo', 'samsung'];
 }
