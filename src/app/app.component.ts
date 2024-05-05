@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  nums = ['s', 'w', 'm', 's', 'b'];
 }
