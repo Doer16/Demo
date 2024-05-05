@@ -1,18 +1,16 @@
 <table border="2">
     <tr>
-        <td>context</td>
-        <td>index</td>
-        <td>even</td>
-        <td>odd</td>
-        <td>first</td>
-        <td>last</td>
+        <td>id</td>
+        <td>name</td>
+        <td>price</td>
+        <td>ram</td>
+        <td>storage</td>
     </tr>
-    <tr *ngFor="let m of mobiles;index as i;even as e;odd as o, first as f;last as l">
-        <td>{{m}}</td><!-- use string interpolation to display variable content  -->
-        <td>{{i}}</td>
-        <td>{{e}}</td>
-        <td>{{o}}</td>
-        <td>{{f}}</td>
-        <td>{{l}}</td>
+    <tr *ngFor="let m of mobiles">
+        <td>{{m.id}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.price}}</td>
+        <td>{{m.ram}}</td>
+        <td>{{m.storage}}</td>
     </tr>
 </table>
