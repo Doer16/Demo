@@ -1,16 +1,12 @@
-<table border="2">
-    <tr>
-        <td>id</td>
-        <td>name</td>
-        <td>price</td>
-        <td>ram</td>
-        <td>storage</td>
-    </tr>
-    <tr *ngFor="let m of mobiles">
-        <td>{{m.id}}</td>
-        <td>{{m.name}}</td>
-        <td>{{m.price}}</td>
-        <td>{{m.ram}}</td>
-        <td>{{m.storage}}</td>
-    </tr>
-</table>
+<button (click)="increment()">Increment click</button>
+<button (click)="decrement()">Decrementclick</button>
+
+<h1>Counter :{{counter}}</h1>
+
+
+Name:<input type="text" (input) = "changeName($event)">
+<!-- alternative way for the input event as below
+Name:<input type="text" on-input="changeName($event)"> -->
+
+
+<h1>Your Name:{{name}}</h1>
