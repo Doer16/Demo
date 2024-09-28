@@ -7,18 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  counter: number = 0;
-  name = "xyz";
+  city: string = "Hyderabad";
 
-  increment() {
-    return this.counter += 1;
-  }
-  decrement() {
-    return this.counter -= 1;
-  }
-
-  changeName(e: any) {
-    this.name = e.target.value;
+  updateCity() {
+    this.city = "Banglore";
   }
 
 }

@@ -1,12 +1,6 @@
-<button (click)="increment()">Increment click</button>
-<button (click)="decrement()">Decrementclick</button>
+City: <input type="text" [(ngModel)]="city">
+<!-- We need to have FormsModule in the AppModule in order to use the ngModel -->
 
-<h1>Counter :{{counter}}</h1>
+<p>{{city}}</p>
 
-
-Name:<input type="text" (input) = "changeName($event)">
-<!-- alternative way for the input event as below
-Name:<input type="text" on-input="changeName($event)"> -->
-
-
-<h1>Your Name:{{name}}</h1>
+<button (click)="updateCity()">Update</button>
