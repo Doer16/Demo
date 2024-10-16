@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  show = "sdf";
-  movies = ['RRR', 'Bheemla Nayak', 'Pushpa','sfasr'];
+  data = ["Hyderabad", "Bangalore", "Delhi"];
 }

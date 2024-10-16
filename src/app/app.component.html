@@ -1,17 +1,11 @@
-
-<h1 *ngIf="show">This is heading</h1>
-
+<h1 *ngIf="!data; then load; else sample">loading.......</h1>
 
 
+<ng-template #sample> <!-- here, sample is template reference variable -->
+    {{data}}
+</ng-template>
+ 
 
-<table border="1">
-    <tr *ngFor="let m of movies"> <!--  here the <tr> loop is iterating -->
-        <td>{{m}}</td>
-    </tr>
-</table>
-
-<table border="1">
-    <tr>
-        <td *ngFor="let m of movies">{{m}}</td> <!--  here the <td> loop is iterating -->
-    </tr>
-</table>
+<ng-template #load> <!-- here, load is template reference variable -->
+    Loading....     <!-- displays Loading....  when the data is empty string -->
+</ng-template>
