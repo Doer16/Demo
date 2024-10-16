@@ -1,6 +1,17 @@
-City: <input type="text" [(ngModel)]="city">
-<!-- We need to have FormsModule in the AppModule in order to use the ngModel -->
 
-<p>{{city}}</p>
+<h1 *ngIf="show">This is heading</h1>
 
-<button (click)="updateCity()">Update</button>
+
+
+
+<table border="1">
+    <tr *ngFor="let m of movies"> <!--  here the <tr> loop is iterating -->
+        <td>{{m}}</td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <td *ngFor="let m of movies">{{m}}</td> <!--  here the <td> loop is iterating -->
+    </tr>
+</table>

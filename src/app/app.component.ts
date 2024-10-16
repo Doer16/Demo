@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  city: string = "Hyderabad";
-
-  updateCity() {
-    this.city = "Banglore";
-  }
-
+  show = "sdf";
+  movies = ['RRR', 'Bheemla Nayak', 'Pushpa','sfasr'];
 }
