@@ -1,11 +1,42 @@
-<h1 *ngIf="!data; then load; else sample">loading.......</h1>
+<p *ngFor="let n of nums">paragraph {{n}}</p>
 
+<h1>--------</h1>
+<p *ngFor="let n of randomNums; index as i ">paragraph {{n}} {{i}}</p> <!-- if needed change the index by {{i +1}} -->
 
-<ng-template #sample> <!-- here, sample is template reference variable -->
-    {{data}}
-</ng-template>
- 
+<h1>--------</h1>
+<table border="2">
+    <tr>
+        <td>content</td>
+        <td>index</td>
+        <td>even</td>
+        <td>odd</td>
+        <td>first</td>
+        <td>last</td>
+    </tr>
+    <tr *ngFor="let m of mobiles; index as i; even as e; odd as o; first as f; last as l ">
+        <td>{{m}}</td>
+        <td>{{i}}</td>
+        <td>{{e}}</td>
+        <td>{{o}}</td>
+        <td>{{f}}</td>
+        <td>{{l}}</td>
+    </tr>
+</table>
 
-<ng-template #load> <!-- here, load is template reference variable -->
-    Loading....     <!-- displays Loading....  when the data is empty string -->
-</ng-template>
+<h1>--------</h1>
+<table border="2">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>price</td>
+        <td>ram</td>
+        <td>storage</td>
+    </tr>
+    <tr *ngFor="let m of mobilesNew ">
+        <td>{{m.id}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.price}}</td>
+        <td>{{m.ram}}</td>
+        <td>{{m.storage}}</td>
+    </tr>
+</table>
