@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  email = "";
   
-  updateEmail(ip:any) {
-    this.email = ip.value;
-  }
 }

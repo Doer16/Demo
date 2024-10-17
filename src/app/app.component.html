@@ -1,15 +1,2 @@
-<!-- If an element is pointed with variable and identified as a template-reference-variable -->
-<input type="text" placeholder="Enter email" #e value ="abc@gmail.com">
-
-<button (click)="updateEmail(e)">Update</button> <!-- We can directly use e.value, then function also need to be modfied in .ts-->
-<div #d class="one two" id="special">{{email}}</div>
-
-<div>{{d.classList}}</div>
-
-<div>{{d.id}}</div>
-
-<!--
-Suppose if we give the #child to the component as
-    <app-root #child></app-root>
-    Then this is called as a variable for the whole component
--->
+<div>This is app component -parent</div>
+<app-header></app-header>
