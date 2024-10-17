@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  wish = "hello good morning";
+  person1 = { "name": "chinni", "gender": "f" };
+  person2 = { "name": "rajamouli", "gender": "m" };
+  wish = "good evening";
 }
