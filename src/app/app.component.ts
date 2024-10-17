@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  person1 = { "name": "chinni", "gender": "f" };
-  person2 = { "name": "rajamouli", "gender": "m" };
-  wish = "good evening";
+  email = "";
+  
+  updateEmail(ip:any) {
+    this.email = ip.value;
+  }
 }
