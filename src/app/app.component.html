@@ -1,12 +1,26 @@
-<input type="text" [(ngModel)]="op">
+<h1>{{name | uppercase}}</h1>
+<h1>{{name | titlecase}}</h1>
 
+<h1>----------</h1>
+<h1>{{name1 | lowercase}}</h1>
 
-<div [ngSwitch]="op">
+<h1>----------</h1>
+<h1>{{salary | currency}}</h1>
+<h1>{{salary | currency : 'INR'}}</h1>
+<h1>{{salary | currency : 'INR'}}</h1>
+<h1>{{salary | currency : 'INR' : 'code'}}</h1>
+<h1>{{salary | currency : 'INR' : 'symbol'}}</h1>
 
-    <div *ngSwitchCase="'+'">{{num1}} + {{num2}} = {{num1+num2}}</div>
-    <div *ngSwitchCase="'-'">{{num1}} - {{num2}} = {{num1-num2}}</div>
-    <div *ngSwitchCase="'*'">{{num1}} * {{num2}} = {{num1*num2}}</div>
-    <div *ngSwitchCase="'/'">{{num1}} / {{num2}} = {{num1/num2}}</div>
-    <div *ngSwitchDefault="'+'">Invalid match</div>
+<h1>----------</h1>
+<h1>{{person1 | json}}</h1>
 
-</div>
+<h1>----------</h1>
+<h1>{{dob | date}}</h1>
+<h1>{{dob | date : 'dd/MM/yy'}}</h1> <!-- MM for month,,mm for minutes -->
+
+<h1>----------</h1>
+<h1>{{num | percent}}</h1>
+
+<h1>----------</h1>
+<h1>{{company | slice:1:7}}</h1>
+<p>{{company}}</p>

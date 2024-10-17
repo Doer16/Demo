@@ -7,7 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  num1: number = 4;
-  num2: number = 8;
-  op: string = '';
+  name = 'angular react javascript';
+  name1 = 'angular';
+  salary = 67000;
+  person1 = {
+    'name': "xyz",
+    'age': 26,
+    'salary': 68000
+  };
+  dob = new Date();
+  num = 0.98;
+  company = "microsoft";
 }
