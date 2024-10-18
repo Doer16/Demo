@@ -6,7 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  @Input() childtitle: any;
+  @Input() d1: any;
+  @Input() d2: any;
 
-  constructor(){ }
+  constructor() { }
 }
