@@ -7,15 +7,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
 
-  @Output() customeve = new EventEmitter();
-  message = "passed to parent";
+  data = "this is demo component communication";
 
-  passToParent() {
-    this.customeve.emit(this.message);
-  }
-
-  updateMessage(e:any) {
-    this.message = e.target.value;
+  demo() {
+    return "Hello";
   }
   
+  newData = "xyz";
 }

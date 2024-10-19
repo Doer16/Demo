@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  cdata: any;
-  
-  updatecdata(d: string) {
-    this.cdata = d;
-  }
+
+
 }
