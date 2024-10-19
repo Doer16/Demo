@@ -1,8 +1,8 @@
 
-<div>
-    <app-header [d1]="data1" [d2]="parr"></app-header>
-</div>
+<div>parent component : {{cdata}}</div>
 
-<div>
-    <app-header [d1]="data2" [d2]="parr2"></app-header>
-</div>
+<!-- <app-header (customeve)="cdata=$event"></app-header> --> <!-- This is alternative code for the below line   -->
+
+<app-header (customeve)="updatecdata($event)"></app-header>
+
+   

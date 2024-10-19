@@ -1,5 +1,6 @@
-{{d1}}
+<button (click)="passToParent()">send</button>
 
-<div *ngFor="let n of d2">
-    {{n}}
-</div>
+<input type="text" (input) ="updateMessage($event)">
+
+
+<div>input : {{message}}</div>

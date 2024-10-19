@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,8 +6,16 @@ import { Component, Input } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  @Input() d1: any;
-  @Input() d2: any;
 
-  constructor() { }
+  @Output() customeve = new EventEmitter();
+  message = "passed to parent";
+
+  passToParent() {
+    this.customeve.emit(this.message);
+  }
+
+  updateMessage(e:any) {
+    this.message = e.target.value;
+  }
+  
 }
