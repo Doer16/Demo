@@ -1,8 +1,24 @@
+<!-- String Interpolation - video:-7 -->
+<h1>{{d}}</h1>
 
-<div>{{child.data}}</div>
-<div>{{child.demo()}}</div>
+<!-- PropertyBinding(DOM) or AttributeBinding - video:-8 -->
+Name: <input type="text">
+<button [disabled]="isDisabled">Submit</button>
 
-<h1>----------</h1>
-<div>parent : {{child.newData}}</div>
+Number: <input type="number" [hidden]="isHidden">
 
-<app-header #child></app-header>
+<!--ClassBinding - video:-9 -->
+<h1 [class]="isActive?'active':'inactive'">This is Heading</h1>
+
+<h1 [class]="{c1:applyC1}">c1 class: Heading</h1>
+
+<h1 [class]="{c1:applyC1,active:true}">Multiple classes(or conditions) as key-value pairs</h1>
+<h1 [class]="['c1','active']">Directly Multiple classes are applyed with no-conditions</h1>
+
+<h1 [class.active]=isActive>This is Heading</h1>
+
+<!--StyleBinding - video:-10 -->
+<h1 [style]="{color:cvar}">This is heading</h1>
+<h1 [style.color]="cvar">This is heading</h1>
+<h1 [style]="mystyle">This is heading</h1>
+<h1 [style.color]="hasError?'red':'green'">This is heading</h1>
